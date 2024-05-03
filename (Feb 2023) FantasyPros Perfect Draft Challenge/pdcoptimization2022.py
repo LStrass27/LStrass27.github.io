@@ -1,8 +1,9 @@
-#Optimization model for Perfect Draft Challenge Fantasy Football 2022
+# Optimization model for Perfect Draft Challenge Fantasy Football 2022
 import random
 
 class playerOptimization:
     def __init__(self):
+        # Best available players dictionary
         self.playerDicti = {"mccaffrey": ('rb'),
                     "ekeler": ('rb'),
                     "jefferson": ('wr'),
@@ -57,7 +58,7 @@ class playerOptimization:
         self.flexWR = 0
         self.flexRB = 0
 
-        
+        # Potential Picks at each of the first 10 rounds of the simulator
         self.rd1 = ["mccaffrey", "ekeler", "jefferson"]
         self.rd2 = ["adams", "diggs", "kelce", "lamb", "barkley", "hill"]
         self.rd3 = ["allen", "Abrown", "higgins", "mahomes", "kittle"]
@@ -68,7 +69,8 @@ class playerOptimization:
         self.rd8 = ["olave", "Jwilliams","Gwilson","stevenson","aiyuk", "devonta","walker", "kirk"]
         self.rd9 = ["olave", "Jwilliams","Gwilson","walker", "kirk"]
         self.rd10 = ["Jwilliams","mostert", "boyd","allgeier","pacheco","palmer", "watson", "taysom","meyers", "engram","Zjones","mckinnon","hollins", "samuel","Gsmith", "Djones","wilson"]
-        
+    
+    # Initialize dictionary of all available players
     def initialDict(self):
         fp = open("realPerfectLineupData.csv", 'r')
         line = fp.readlines()
@@ -86,6 +88,7 @@ class playerOptimization:
                 sub_player_list[i] = float(sub_player_list[i])
             self.playerDicti[player_list[0]] = (self.playerDicti[player_list[0]], sub_player_list)
 
+    # Randomize Selections in each round
     def generateIndices(self):
         rd1index = random.randint(0,len(self.rd1) - 1)
         rd2index = random.randint(0,len(self.rd2) - 1)
@@ -103,13 +106,12 @@ class playerOptimization:
         rd14index = random.randint(0,len(self.rd10) - 1)
         
         return (rd1index, rd2index, rd3index, rd4index, rd5index, rd6index, rd7index, rd8index, rd9index, rd10index, rd11index, rd12index, rd13index, rd14index)
-        
+    
+    # Create 1 sim of a draft round
     def draft(self, indices):
         draftList = []
         overallList = []
-        #draft 1 person from each list
-
-
+        #draft 1 person from each round
         overallList.append(self.rd1)
         overallList.append(self.rd2)
         overallList.append(self.rd3)
@@ -125,20 +127,17 @@ class playerOptimization:
         overallList.append(self.rd10)
         overallList.append(self.rd10)
         overallList.append(self.rd10)
-
-        
+     
         for i in range(len(indices)):
             draftList.append(overallList[i][indices[i]])
-            
 
         return draftList
 
-
+    # Make sure you have proper positions to field a lineup
     def positionCompile(self, playerList):
         for i in range(len(playerList)):
             if playerList.count(playerList[i]) > 1:
                 return "invalid"
-
 
         positionList = []
         for i in range(len(playerList)):
@@ -146,8 +145,7 @@ class playerOptimization:
 
         return positionList
 
-
-
+    # Determine total points of this simulation
     def pointsSummation(self, positionList):
         qbList = []
         rbList = []
@@ -155,7 +153,6 @@ class playerOptimization:
         teList = []
         totalPoints = 0
         weekList = []
-
         
         for i in range(len(positionList)):
             if positionList[i][0] == "rb":
@@ -167,7 +164,7 @@ class playerOptimization:
             elif positionList[i][0] == "te":
                 teList.append(positionList[i][1])
 
-
+        # Best Ball scoring so take best by week
         for i in range(18):
             for j in range(len(rbList)):
                 weekList.append(rbList[j][i])
@@ -232,7 +229,7 @@ class playerOptimization:
             else:
                 return weekScores[0]
 
-
+    # Determine who starts at flex each week
     def flexCalc(self, teValue, wrValue, rbValue):
         if ((rbValue > wrValue) and (rbValue > teValue)):
             return rbValue
@@ -245,6 +242,8 @@ class playerOptimization:
         return self.playerDicti[player]
     
 def main():
+    # Run a bunch of simulation and print the best sims
+    # Analyze which players are targets in each round
     for i in range(1000000):
 
         test1 = playerOptimization()
