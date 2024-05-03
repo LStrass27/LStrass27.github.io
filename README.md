@@ -3,5 +3,5 @@ Hi there my name is Luke. I am a Rising Senior Honors student at the University 
 
 ## Tech Stack
 **Languages:** C, Java, Julia, Python, R, SQL  
-**Libraries:** BaseballR, Glmnet , Matplotlib, Numpy, Pandas, SciKit-Learn  
+**Libraries:** BaseballR, Glmnet, Matplotlib, Numpy, Pandas, SciKit-Learn  
 **Tools:** Microsoft Excel, Github, PostgreSQL, RStudio, VS Code
