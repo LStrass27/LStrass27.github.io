@@ -1,11 +1,13 @@
 # Luke Strassburg
-        
+
+# Intialize Player Class which contains the information for a unique nflid
 class Player:
     def __init__(self, nflid, birthDate, officialPosition, name, height, weight, college):
         self.id = nflid
         self.birthday = birthDate
         self.position = officialPosition
         self.name = name
+        # Lineaman performance play-by-play stored in these arrays
         self.week1 = []
         self.week2 = []
         self.week3 = []
@@ -18,6 +20,7 @@ class Player:
         self.weight = weight
         self.college = college
 
+    # Getter and Setter Functions for Player Class Variables
     def get_name(self):
         return self.name[1:-2]
     
@@ -114,7 +117,7 @@ class Player:
         else:
             return self.college[1:-1]
 
-
+# Intialize Class for a Unique Play/Player Combo
 class Play():
     def __init__(self, playid, playerid, beaten, hit, hurried, sacked, gameid, weeknum):
         self.playid = playid
@@ -126,6 +129,7 @@ class Play():
         self.gameid = gameid
         self.weeknum = weeknum
 
+    # Classify whether the lineman was successful on the play (0 = Failure, 1 = Success)
     def play_outcome(self):
         if self.beaten == str(1) or self.hit == str(1) or self.hurried == str(1) or self.sacked == str(1):
             return 1
@@ -169,7 +173,8 @@ def game_dictionary():
         x = 0
     return game_dict
 
-
+# Populate a dictionary with all the player fundamental data
+# Initialize an object of the Player class for each player
 def player_dictionary():
     fp = open('players.csv', 'r')
     lines = fp.readlines()
@@ -182,6 +187,7 @@ def player_dictionary():
         i.strip()
         data_list.append(i.split(','))
         data_list = data_list[0]
+        # Initialize new Player object
         tree = Player(data_list[0], data_list[3], data_list[5], data_list[6], data_list[1], data_list[2], data_list[4])
         player_dict[data_list[0]] = tree
         
@@ -189,7 +195,8 @@ def player_dictionary():
         tree = 0
     return player_dict
 
-
+# Populate a dictionary with all the Play fundamental data
+# Initialize an object of the Play class for each player/Play combo
 def play_dictionary():
     fg = open('pffScoutingData.csv', 'r')
     line = fg.readlines()
@@ -211,15 +218,14 @@ def play_dictionary():
 
     return play_dict
 
-
-
-
-
+# Main function
 def main():
+    # Intialize the game, player, and play dictionaries to store info
     game_dict = game_dictionary()
     player_dict = player_dictionary()
     play_dict = play_dictionary()
 
+    # Assign plays to what week they occur in
     for key in play_dict:
         gameid = play_dict[key].get_gameid()
         weeknum = game_dict[gameid]
@@ -227,6 +233,8 @@ def main():
         weeknum = 0
         gameid = 0
 
+    # Identify which player and week a given play belongs to
+    # Update the player's weekly performance array with new play result
     for ke in play_dict:
         weeknum = int(play_dict[ke].get_weeknum())
         player_id = play_dict[ke].get_playerid()
@@ -255,14 +263,14 @@ def main():
     
         elif weeknum == 8:
             player_ob.set_week8(play_dict[ke].play_outcome())
-
+    
+    # Write to a performance CSV
     nyc = open("bdb-fatigue.csv" , 'w')
     nyc.write('name,age,position,height,weight,college,week,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80')
     nyc.write('\n')
     
-# Not sure how to use a for loop to call all eight weeks automatically, so I will
-# manually do each one
-    
+# Not sure how to use a for loop to call all eight weeks automatically, so I will manually do each one
+
     string = ''
     for keys in player_dict:
         week = 1

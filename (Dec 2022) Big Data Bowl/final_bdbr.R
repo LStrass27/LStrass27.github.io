@@ -1,8 +1,10 @@
 library(readr)
 library(dplyr)
 
+# Read Weekly Performance Data
 oline_fatigue <- read_csv("bdb-fatigue.csv")
 
+# Split By Age
 age23bel = subset(oline_fatigue, age <= 23)
 age23bel = subset(age23bel, select = -c(name, age, position, height,weight, college, week,`80`))
 
@@ -40,6 +42,7 @@ is.data.frame(age29)
 is.data.frame(age30)
 is.data.frame(age31up)
 
+# Calculate Mean Play Performance By Age
 age23bel_av = colMeans(age23bel, na.rm = TRUE)
 age24_av = colMeans(age24, na.rm = TRUE)
 age25_av = colMeans(age25, na.rm = TRUE)
@@ -60,7 +63,7 @@ is.vector(age23bel_av)
 summary(age23bel$"3")
 summary(age23bel$"15")
 summary(age23bel$"30")
-# .1144, .1214, .1382 (Shows slight improvement)
+# .1144, .1214, .1382 (Shows Slight Regression)
 
 
 # Fail rate of age 31 and above at different times
@@ -68,7 +71,7 @@ summary(age23bel$"30")
 summary(age31up$"3")
 summary(age31up$"15")
 summary(age31up$"30")
-# .05747, .1078, .1183 (Shows significant improvement)
+# .05747, .1078, .1183 (Shows Significant Regression)
 
 # Testing significance of differences in failure among
 # different age groups
@@ -93,12 +96,10 @@ t.test(age31up$"3",age31up$"30")
 #CI: (-.136,.014), t=-1.60, p=.11
 
 # Data Frame for Averages
-
 averages_df = data.frame(age23bel_av,age24_av,age25_av,age26_av,age27_av,age28_av,age29_av,age30_av,age31up_av)
 (averages_df$age23bel_av)
 
 # Line graph for each age depicting fail rate by play number
-
 plot(age23bel_av,type="p",xlab="Play Number",ylab="Fail Rate",main="Age 23 & Below")
 plot(age24_av,type="p",xlab="Play Number",ylab="Fail Rate",main="Age 24")
 plot(age25_av,type="p",xlab="Play Number",ylab="Fail Rate",main="Age 25")
