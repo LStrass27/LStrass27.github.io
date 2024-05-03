@@ -1,0 +1,561 @@
+First_name,Last_name,POS,AGE,2010 TEAM,NEW TEAM,YRS,DOLLARS,Year
+Jose,Reyes,SS,27,Mets,Marlins,6,106000000,2011
+Hanley,Ramirez,SS,30,Dodgers,Red Sox,4,88000000,2014
+Derek,Jeter,SS,35,Yankees,Yankees,3,51000000,2010
+Jimmy,Rollins,SS,32,Phillies,Phillies,3,38000000,2011
+Marwin,Gonzalez,SS,29,Astros,Twins,2,21000000,2018
+Didi,Gregorius,SS,30,Yankees,Phillies,1,14000000,2019
+Clint,Barmes,SS,31,Astros,Pirates,2,10500000,2011
+Stephen,Drew,SS,28,Athletics,Red Sox,1,9500000,2012
+Willie,Bloomquist,SS,35,Diamondbacks,Mariners,2,5800000,2013
+Jordy,Mercer,SS,32,Pirates,Tigers,1,5250000,2018
+Brendan,Ryan,SS,30,Yankees,Yankees,2,5000000,2013
+Stephen,Drew,SS,30,Yankees,Yankees,1,5000000,2014
+Freddy,Galvis,SS,29,Padres,Blue Jays,1,5000000,2018
+Alex,Gonzalez,SS,34,Braves,Brewers,1,4250000,2011
+Ramon,Santiago,SS,31,Tigers,Tigers,2,4200000,2011
+Alexei,Ramirez,SS,34,White Sox,Padres,1,4000000,2015
+Willie,Bloomquist,SS,33,Diamondbacks,Diamondbacks,2,3800000,2011
+Cliff,Pennington,SS,31,Blue Jays,Angels,2,3750000,2015
+Stephen,Drew,SS,33,Nationals,Nationals,1,3500000,2016
+Wilson,Betemit,SS,29,Tigers,Orioles,2,3250000,2011
+Stephen,Drew,SS,32,Yankees,Nationals,1,3000000,2015
+Chris,Owings,SS,27,Diamondbacks,Royals,1,3000000,2018
+José,Iglesias,SS,30,Reds,Orioles,1,3000000,2019
+Alcides,Escobar,SS,31,Royals,Royals,1,2500000,2017
+Edgar,Renteria,SS,34,Giants,Reds,1,2100000,2010
+Rickie,Weeks,SS,31,Brewers,Mariners,1,2000000,2014
+Mike,Aviles,SS,34,Indians,Tigers,1,2000000,2015
+José,Reyes,SS,34,Mets,Mets,1,2000000,2017
+Tim,Beckham,SS,29,Orioles,Mariners,1,1750000,2018
+Cesar,Izturis,SS,30,Orioles,Orioles,1,1500000,2010
+Clint,Barmes,SS,34,Pirates,Padres,1,1500000,2014
+Craig,Counsell,SS,39,Brewers,Brewers,1,1400000,2010
+Gordon,Beckham,SS,29,White Sox,Braves,1,1250000,2015
+Adam,Rosales,SS,33,Padres,Athletics,1,1250000,2016
+Erick,Aybar,SS,34,Padres,Twins,1,1250000,2017
+Jack,Wilson,SS,33,Braves,Braves,1,1000000,2011
+Willie,Bloomquist,SS,32,Reds,Diamondbacks,1,900000,2010
+JT,Riddle,SS,28,Marlins,Pirates,1,850000,2019
+Adam,Rosales,SS,29,Athletics,Rangers,1,750000,2013
+Troy,Tulowitzki,SS,34,Blue Jays,Yankees,1,555000,2018
+Orlando,Cabrera,SS,35,Twins,Reds,1,3020000,2009
+Alex,Gonzalez,SS,33,Red Sox,Blue Jays,1,2750000,2009
+Craig,Counsell,SS,39,Brewers,Brewers,1,2100000,2009
+Alex,Cora,SS,34,Mets,Mets,1,2000000,2009
+Bobby,Crosby,SS,30,Athletics,Pirates,1,1000000,2009
+Bryce,Harper,OF,26,Nationals,Phillies,13,330000000,2018
+Jason,Heyward,OF,26,Cardinals,Cubs,8,184000000,2015
+Jacoby,Ellsbury,OF,29,Red Sox,Yankees,7,153000000,2013
+Carl,Crawford,OF,28,Rays,Red Sox,7,142000000,2010
+Justin,Upton,OF,28,Padres,Tigers,6,132750000,2015
+Shin-Soo,Choo,OF,30,Reds,Rangers,7,130000000,2013
+Jayson,Werth,OF,30,Phillies,Nationals,7,126000000,2010
+Josh,Hamilton,OF,30,Rangers,Angels,5,123000000,2012
+Yoenis,Cespedes,OF,31,Mets,Mets,4,110000000,2016
+J.D.,Martinez,OF,30,Diamondbacks,Red Sox,5,110000000,2017
+Dexter,Fowler,OF,30,Cubs,Cardinals,5,82500000,2016
+Lorenzo,Cain,OF,31,Royals,Brewers,5,80000000,2017
+B.J.,Upton,OF,27,Rays,Braves,5,75250000,2012
+Yoenis,Cespedes,OF,30,Mets,Mets,3,75000000,2015
+Alex,Gordon,OF,32,Royals,Royals,4,72000000,2015
+Ian,Desmond,OF,31,Rangers,Rockies,5,70000000,2016
+Yasmany,Tomas,OF,23,Cuba,Diamondbacks,6,68500000,2014
+Nick,Castellanos,OF,27,Cubs,Reds,4,64000000,2019
+Curtis,Granderson,OF,31,Yankees,Mets,4,60000000,2013
+AJ,Pollock,OF,31,Diamondbacks,Dodgers,5,60000000,2018
+Nelson,Cruz,OF,33,Orioles,Mariners,4,57000000,2014
+Adam,Dunn,OF,30,Nationals,White Sox,4,56000000,2010
+Nick,Swisher,OF,31,Yankees,Guardians,4,56000000,2012
+Ben,Zobrist,OF,34,Royals,Cubs,4,56000000,2015
+Josh,Reddick,OF,30,Dodgers,Astros,4,52000000,2016
+Andrew,McCutchen,OF,32,Yankees,Phillies,3,50000000,2018
+Michael,Bourn,OF,29,Braves,Guardians,4,48000000,2012
+Carlos,Beltran,OF,35,Cardinals,Yankees,3,45000000,2013
+Nick,Markakis,OF,30,Orioles,Braves,4,44000000,2014
+Melky,Cabrera,OF,29,Blue Jays,White Sox,3,42000000,2014
+Angel,Pagan,OF,30,Giants,Giants,4,40000000,2012
+Shane,Victorino,OF,31,Dodgers,Red Sox,3,39000000,2012
+Jay,Bruce,OF,30,Indians,Mets,3,39000000,2017
+Mark,Trumbo,OF,31,Orioles,Orioles,3,37500000,2016
+Michael,Brantley,OF,31,Indians,Astros,2,32000000,2018
+Michael,Cuddyer,OF,31,Twins,Rockies,3,31500000,2011
+Denard,Span,OF,31,Nationals,Giants,3,31000000,2015
+Gerardo,Parra,OF,28,Orioles,Rockies,3,27500000,2015
+Carlos,Beltran,OF,33,Giants,Cardinals,2,26000000,2011
+Torii,Hunter,OF,36,Angels,Tigers,2,26000000,2012
+Cody,Ross,OF,31,Red Sox,Diamondbacks,3,26000000,2012
+Josh,Willingham,OF,32,Athletics,Twins,3,21000000,2011
+Michael,Cuddyer,OF,34,Rockies,Mets,2,21000000,2014
+Avisail,Garcia,OF,28,Rays,Brewers,2,20000000,2019
+José,Bautista,OF,36,Blue Jays,Blue Jays,1,18000000,2016
+Marcell,Ozuna,OF,29,Cardinals,Braves,1,18000000,2019
+Corey,Dickerson,OF,30,Phillies,Marlins,2,17500000,2019
+Matt,Joyce,OF,35,Braves,Marlins,2,17500000,2019
+Melky,Cabrera,OF,27,Giants,Blue Jays,2,16000000,2012
+Marlon,Byrd,OF,35,Pirates,Phillies,2,16000000,2013
+Carlos,Beltran,OF,39,Rangers,Astros,1,16000000,2016
+Kole,Calhoun,OF,32,Angels,Diamondbacks,2,16000000,2019
+Colby,Rasmus,OF,29,Astros,Astros,1,15800000,2015
+Jason,Kubel,OF,28,Twins,Diamondbacks,2,15000000,2011
+Ryan,Ludwick,OF,33,Reds,Reds,2,15000000,2012
+Nelson,Cruz,OF,38,Mariners,Twins,1,14300000,2018
+Coco,Crisp,OF,31,Athletics,Athletics,2,14000000,2011
+Ichiro,Suzuki,OF,38,Yankees,Yankees,2,13000000,2012
+Dexter,Fowler,OF,29,Cubs,Cubs,1,13000000,2015
+Chris,Young,OF,32,Yankees,Red Sox,2,13000000,2015
+Matt,Holliday,OF,37,Cardinals,Yankees,1,13000000,2016
+Brett,Gardner,OF,36,Yankees,Yankees,1,12500000,2019
+David,Murphy,OF,31,Rangers,Guardians,2,12000000,2013
+Brandon,Moss,OF,33,Cardinals,Royals,2,12000000,2016
+Carlos,Gomez,OF,31,Rangers,Rangers,1,11500000,2016
+Alex,Rios,OF,33,Rangers,Royals,1,11000000,2014
+Matt,Joyce,OF,32,Pirates,Athletics,2,11000000,2016
+Nate,McLouth,OF,31,Orioles,Nationals,2,10750000,2013
+Torii,Hunter,OF,38,Tigers,Twins,1,10500000,2014
+Magglio,Ordonez,OF,36,Tigers,Tigers,1,10000000,2010
+David,DeJesus,OF,31,Athletics,Cubs,2,10000000,2011
+Jonny,Gomes,OF,31,Athletics,Red Sox,2,10000000,2012
+Rajai,Davis,OF,32,Blue Jays,Tigers,2,10000000,2013
+Michael,Saunders,OF,30,Blue Jays,Phillies,1,9000000,2016
+Vladimir,Guerrero,OF,35,Rangers,Orioles,1,8000000,2010
+Nelson,Cruz,OF,32,Rangers,Orioles,1,8000000,2013
+Colby,Rasmus,OF,27,Blue Jays,Astros,1,8000000,2014
+Ian,Desmond,OF,30,Nationals,Rangers,1,8000000,2015
+Jon,Jay,OF,31,Padres,Cubs,1,8000000,2016
+Carlos,Gonzalez,OF,32,Rockies,Rockies,1,8000000,2017
+Garrett,Jones,OF,31,Pirates,Marlins,2,7750000,2013
+Jarrod,Dyson,OF,33,Mariners,Diamondbacks,2,7500000,2017
+Brett,Gardner,OF,35,Yankees,Yankees,1,7500000,2018
+Chris,Young,OF,29,Athletics,Mets,1,7250000,2013
+Rajai,Davis,OF,36,Indians,Athletics,1,6000000,2016
+Austin,Jackson,OF,31,Indians,Giants,2,6000000,2017
+Nick,Markakis,OF,35,Braves,Braves,1,6000000,2018
+Alejandro De,Aza,OF,31,Giants,Mets,1,5750000,2015
+Norichika,Aoki,OF,34,Giants,Mariners,1,5500000,2015
+Johnny,Damon,OF,36,Tigers,Rays,1,5250000,2010
+Rajai,Davis,OF,35,Tigers,Guardians,1,5250000,2015
+Billy,Hamilton,OF,28,Reds,Royals,1,5250000,2018
+Grady,Sizemore,OF,28,Indians,Guardians,1,5000000,2011
+Skip,Schumaker,OF,33,Dodgers,Reds,2,5000000,2013
+Austin,Jackson,OF,29,Cubs,White Sox,1,5000000,2015
+Colby,Rasmus,OF,30,Astros,Rays,1,5000000,2016
+Curtis,Granderson,OF,36,Dodgers,Blue Jays,1,5000000,2017
+Norichika,Aoki,OF,32,Royals,Giants,1,4700000,2014
+Juan,Rivera,OF,32,Dodgers,Dodgers,1,4500000,2011
+Matt,Diaz,OF,31,Braves,Pirates,2,4250000,2010
+Hideki,Matsui,OF,35,Angels,Athletics,1,4250000,2010
+Wily Mo,Pena,OF,29,Mariners,Japan,2,4050000,2011
+Jonny,Gomes,OF,33,Athletics,Braves,1,4000000,2014
+Ben,Revere,OF,28,Nationals,Angels,1,4000000,2016
+Carlos,Gomez,OF,32,Rangers,Rays,1,4000000,2017
+Jon,Jay,OF,33,Diamondbacks,White Sox,1,4000000,2018
+Alex,Gordon,OF,36,Royals,Royals,1,4000000,2019
+Kevin,Pillar,OF,31,Giants,Red Sox,1,4000000,2019
+Avisail,Garcia,OF,27,White Sox,Rays,1,3500000,2018
+Cameron,Maybin,OF,30,Astros,Marlins,1,3250000,2017
+Ryan,Doumit,OF,29,Pirates,Twins,1,3000000,2011
+Cody,Ross,OF,30,Giants,Red Sox,1,3000000,2011
+Adam,Jones,OF,33,Orioles,Diamondbacks,1,3000000,2018
+Hunter,Pence,OF,36,Rangers,Giants,1,3000000,2019
+Raul,Ibanez,OF,39,Yankees,Mariners,1,2750000,2012
+Raul,Ibanez,OF,40,Mariners,Angels,1,2750000,2013
+Lonnie,Chisenhall,OF,30,Indians,Pirates,1,2750000,2018
+Chris,DenoOFia,OF,33,Mariners,Cubs,1,2600000,2014
+Franklin,Gutierrez,OF,33,Mariners,Dodgers,1,2600000,2016
+Jack,Cust,OF,31,Athletics,Mariners,1,2500000,2010
+Laynce,Nix,OF,30,Nationals,Phillies,2,2500000,2011
+Chris,Young,OF,30,Yankees,Yankees,1,2500000,2014
+Norichika,Aoki,OF,29,Japan,Brewers,2,2250000,2011
+Delmon,Young,OF,28,Orioles,Orioles,1,2250000,2014
+Nate,Schierholtz,OF,28,Phillies,Cubs,1,2225000,2012
+Andruw,Jones,OF,32,White Sox,Yankees,1,2000000,2010
+Manny,Ramirez,OF,37,White Sox,Rays,1,2000000,2010
+Andruw,Jones,OF,33,Yankees,Yankees,1,2000000,2011
+Nate,McLouth,OF,30,Orioles,Orioles,1,2000000,2012
+Andres,Torres,OF,34,Mets,Giants,1,2000000,2012
+Ichiro,Suzuki,OF,40,Yankees,Marlins,1,2000000,2014
+Chris,Young,OF,34,Red Sox,Angels,1,2000000,2017
+Robbie,Grossman,OF,29,Twins,Athletics,1,2000000,2018
+Xavier,Nady,OF,31,Cubs,Diamondbacks,1,1750000,2010
+Nate,McLouth,OF,29,Braves,Pirates,1,1750000,2011
+Reed,Johnson,OF,35,Braves,Braves,1,1750000,2012
+Leonys,Martin,OF,29,Cubs,Tigers,1,1750000,2017
+Nyjer,Morgan,OF,31,Brewers,Japan,1,1600000,2012
+Juan,Pierre,OF,34,Phillies,Marlins,1,1600000,2012
+Rick,Ankiel,OF,30,Braves,Nationals,1,1500000,2010
+Endy,Chavez,OF,33,Rangers,Orioles,1,1500000,2011
+Adam,Lind,OF,33,Mariners,Nationals,1,1500000,2016
+Cameron,Maybin,OF,32,Yankees,Tigers,1,1500000,2019
+Domingo,Santana,OF,27,Mariners,Guardians,1,1500000,2019
+Eric,Hinske,OF,32,Braves,Braves,1,1450000,2010
+Peter,Bourjos,OF,30,Rays,Cubs,1,1450000,2017
+Chris,Heisey,OF,32,Nationals,Nationals,1,1400000,2016
+Eric,Hinske,OF,34,Braves,Diamondbacks,1,1350000,2012
+Austin,Kearns,OF,29,Yankees,Guardians,1,1300000,2010
+Melky,Cabrera,OF,25,Braves,Royals,1,1250000,2010
+Mark,Kotsay,OF,35,Brewers,Padres,1,1250000,2011
+Thomas,Milone,OF,22,Twins,Brewers,1,1250000,2016
+Reed,Johnson,OF,34,Cubs,Cubs,1,1150000,2011
+Scott,Hairston,OF,30,Mets,Mets,1,1100000,2011
+Pat,Burrell,OF,33,Giants,Giants,1,1000000,2010
+Marcus,Thames,OF,32,Yankees,Dodgers,1,1000000,2010
+Kosuke,Fukudome,OF,33,Indians,White Sox,1,1000000,2011
+Jonny,Gomes,OF,30,Nationals,Athletics,1,1000000,2011
+Franklin,Gutierrez,OF,29,Mariners,Mariners,1,1000000,2013
+Guillermo,Heredia,OF,29,Rays,Pirates,1,1000000,2019
+Steven Souza,Jr.,OF,30,Diamondbacks,Cubs,1,1000000,2019
+Fred,Lewis,OF,29,Rangers,Reds,1,900000,2010
+Mark,Kotsay,OF,34,White Sox,Brewers,1,800000,2010
+Delmon,Young,OF,26,Tigers,Phillies,1,750000,2012
+Dewayne,Wise,OF,33,White Sox,White Sox,1,700000,2012
+Tony,Gwynn,OF,27,Padres,Dodgers,1,675000,2010
+Terrance,Gore,OF,27,Cubs,Royals,1,650000,2018
+Matt,Holliday,OF,30,Cardinals,Cardinals,7,120000000,2009
+Jason,Bay,OF,31,Red Sox,Mets,4,66000000,2009
+Mike,Cameron,OF,37,Brewers,Red Sox,2,15500000,2009
+Marlon,Byrd,OF,32,Rangers,Cubs,3,15000000,2009
+Johnny,Damon,OF,36,Yankees,Tigers,1,8000000,2009
+Hideki,Matsui,OF,35,Yankees,Angels,1,6500000,2009
+Coco,Crisp,OF,30,Royals,Athletics,1,5250000,2009
+Vladimir,Guerrero,OF,35,Angels,Rangers,1,5000000,2009
+Xavier,Nady,OF,31,Yankees,Cubs,1,3300000,2009
+Rick,Ankiel,OF,30,Cardinals,Royals,1,3250000,2009
+Jack,Cust,OF,31,Athletics,Athletics,1,2650000,2009
+Scott,Podsednik,OF,33,White Sox,Royals,1,1750000,2009
+Ryan,Church,OF,31,Braves,Pirates,1,1500000,2009
+Randy,Winn,OF,35,Giants,Yankees,1,1100000,2009
+Eric,Hinske,OF,32,Yankees,Braves,1,1000000,2009
+Jason,Michaels,OF,33,Astros,Astros,1,850000,2009
+Jonny,Gomes,OF,29,Reds,Reds,1,800000,2009
+Reed,Johnson,OF,33,Cubs,Dodgers,1,800000,2009
+Gabe,Gross,OF,30,Rays,Athletics,1,750000,2009
+Andruw,Jones,OF,32,Rangers,White Sox,1,500000,2009
+Brian,McCann,C,29,Braves,Yankees,5,85000000,2013
+Russell,Martin,C,31,Pirates,Blue Jays,5,82000000,2014
+Yasmani,Grandal,C,31,Brewers,White Sox,4,73000000,2019
+Carlos,Ruiz,C,34,Phillies,Phillies,3,26000000,2013
+Jason,Castro,C,29,Astros,Twins,3,24500000,2016
+Jarrod,Saltalamacchia,C,27,Red Sox,Marlins,3,21000000,2013
+Matt,Wieters,C,30,Orioles,Nationals,2,21000000,2016
+Wilson,Ramos,C,31,Phillies,Mets,2,19000000,2018
+Yasmani,Grandal,C,30,Dodgers,Brewers,1,18250000,2018
+John,Buck,C,29,Blue Jays,Marlins,3,18000000,2010
+Russell,Martin,C,29,Yankees,Pirates,2,17000000,2012
+Travis,d'Arnaud,C,31,Rays,Braves,2,16000000,2019
+Matt,Wieters,C,29,Orioles,Orioles,1,15800000,2015
+Welington,Castillo,C,30,Orioles,White Sox,2,15000000,2017
+Wilson,Ramos,C,29,Nationals,Rays,2,12500000,2016
+Kurt,Suzuki,C,35,Braves,Nationals,2,10000000,2018
+Chris,Iannetta,C,34,Diamondbacks,Rockies,2,8500000,2017
+A.J.,Pierzynski,C,36,Rangers,Red Sox,1,8250000,2013
+Alex,Avila,C,31,Cubs,Diamondbacks,2,8250000,2017
+A.J.,Pierzynski,C,33,White Sox,White Sox,2,8000000,2010
+Dioner,Navarro,C,29,Cubs,Blue Jays,2,8000000,2013
+A.J.,Pierzynski,C,35,White Sox,Rangers,1,7500000,2012
+Miguel,Olivo,C,31,Blue Jays,Mariners,2,7000000,2010
+Martin,Maldonado,C,33,Astros,Astros,2,7000000,2019
+Jason,Castro,C,32,Twins,Angels,1,6850000,2019
+Jonathan,Lucroy,C,31,Rockies,Athletics,1,6500000,2017
+Ramon,Hernandez,C,34,Reds,Rockies,2,6400000,2011
+Yorvit,Torrealba,C,31,Padres,Rangers,2,6250000,2010
+Nick,Hundley,C,30,Orioles,Rockies,2,6250000,2014
+Jeff,Mathis,C,35,Diamondbacks,Rangers,2,6250000,2018
+David,Ross,C,34,Braves,Red Sox,2,6200000,2012
+Welington,Castillo,C,29,Diamondbacks,Orioles,1,6000000,2016
+Robinson,Chirinos,C,34,Rangers,Astros,1,5750000,2018
+Robinson,Chirinos,C,35,Astros,Rangers,1,5500000,2019
+David,Ross,C,36,Red Sox,Cubs,2,5000000,2014
+Brayan,Pena,C,34,Reds,Cardinals,2,5000000,2015
+Chris,Iannetta,C,32,Angels,Mariners,1,4250000,2015
+Alex,Avila,C,33,Diamondbacks,Twins,1,4250000,2019
+Austin,Romine,C,31,Yankees,Tigers,1,4150000,2019
+Russell,Martin,C,27,Dodgers,Yankees,1,4000000,2010
+Rod,Barajas,C,35,Dodgers,Pirates,1,4000000,2011
+Dioner,Navarro,C,32,Blue Jays,White Sox,1,4000000,2015
+Jeff,Mathis,C,33,Marlins,Diamondbacks,2,4000000,2016
+Tyler,Flowers,C,34,Braves,Braves,1,4000000,2019
+Drew,Butera,C,33,Royals,Royals,2,3800000,2016
+Jonathan,Lucroy,C,32,Athletics,Angels,1,3350000,2018
+Rod,Barajas,C,34,Dodgers,Dodgers,1,3250000,2010
+Geovany,Soto,C,30,Rangers,Rangers,1,3050000,2013
+Ramon,Hernandez,C,33,Reds,Reds,1,3000000,2010
+A.J.,Pierzynski,C,39,Braves,Braves,1,3000000,2015
+Stephen,Vogt,C,35,Giants,Diamondbacks,1,3000000,2019
+Geovany,Soto,C,33,White Sox,Angels,1,2800000,2015
+Rene,Rivera,C,34,Cubs,Angels,1,2800000,2017
+Geovany,Soto,C,29,Rangers,Rangers,1,2750000,2012
+Kurt,Suzuki,C,29,Athletics,Twins,1,2750000,2013
+Alex,Avila,C,29,Tigers,White Sox,1,2500000,2015
+A.J.,Ellis,C,35,Phillies,Marlins,1,2500000,2016
+Nick,Hundley,C,34,Giants,Giants,1,2500000,2017
+Martin,Maldonado,C,32,Astros,Royals,1,2500000,2018
+James,McCann,C,28,Tigers,White Sox,1,2500000,2018
+Brayan,Pena,C,31,Tigers,Reds,2,2275000,2013
+Jason,Varitek,C,37,Red Sox,Red Sox,1,2000000,2010
+A.J.,Pierzynski,C,37,Cardinals,Braves,1,2000000,2014
+Alex,Avila,C,30,White Sox,Tigers,1,2000000,2016
+Nick,Hundley,C,33,Rockies,Giants,1,2000000,2016
+Brian,McCann,C,35,Astros,Braves,1,2000000,2018
+Francisco,Cervelli,C,33,Braves,Marlins,1,2000000,2019
+Matt,Wieters,C,33,Cardinals,Cardinals,1,2000000,2019
+J.P.,Arencibia,C,27,Blue Jays,Rangers,1,1800000,2013
+Chris,Iannetta,C,33,Mariners,Diamondbacks,1,1700000,2016
+Kelly,Shoppach,C,31,Mets,Mariners,1,1500000,2012
+Jeff,Mathis,C,32,Marlins,Marlins,1,1500000,2015
+Kurt,Suzuki,C,33,Twins,Braves,1,1500000,2016
+Kelly,Shoppach,C,30,Rays,Red Sox,1,1350000,2011
+Ronny,Paulino,C,28,Marlins,Mets,1,1300000,2010
+Henry,Blanco,C,38,Mets,Diamondbacks,1,1250000,2010
+Henry,Blanco,C,39,Diamondbacks,Diamondbacks,1,1250000,2011
+Dioner,Navarro,C,28,Reds,Cubs,1,1175000,2012
+Wil,Nieves,C,35,Diamondbacks,Phillies,1,1125000,2013
+Caleb,Joséph,C,32,Orioles,Diamondbacks,1,1100000,2018
+Gerald,Laird,C,30,Tigers,Cardinals,1,1000000,2010
+Dioner,Navarro,C,26,Rays,Dodgers,1,1000000,2010
+Gerald,Laird,C,31,Cardinals,Tigers,1,1000000,2011
+John,Buck,C,32,Pirates,Mariners,1,1000000,2013
+Chris,Herrmann,C,31,Mariners,Athletics,1,1000000,2018
+Luke,Maile,C,29,Blue Jays,Pirates,1,900000,2019
+Kevin,Plawecki,C,28,Indians,Red Sox,1,900000,2019
+Matt,Treanor,C,33,Rangers,Rangers,1,850000,2010
+Matt,Treanor,C,34,Rangers,Dodgers,1,850000,2011
+Jesus,Sucre,C,30,Rays,Orioles,1,850000,2018
+Brian,Schneider,C,34,Phillies,Phillies,1,800000,2011
+Wil,Nieves,C,32,Nationals,Brewers,1,775000,2010
+Chris,Snyder,C,30,Pirates,Astros,1,750000,2011
+Eli,Whiteside,C,31,Giants,Giants,1,600000,2011
+Jason,Kendall,C,35,Brewers,Royals,2,6000000,2009
+Ivan,Rodriguez,C,38,Rangers,Nationals,2,6000000,2009
+Bengie,Molina,C,35,Giants,Giants,1,4500000,2009
+Brian,Schneider,C,33,Mets,Phillies,2,2750000,2009
+Miguel,Olivo,C,31,Royals,Rockies,1,2500000,2009
+Gregg,Zaun,C,38,Rays,Brewers,1,2150000,2009
+John,Buck,C,29,Royals,Blue Jays,1,2000000,2009
+Yorvit,Torrealba,C,31,Rockies,Padres,1,1250000,2009
+Brad,Ausmus,C,40,Dodgers,Dodgers,1,1000000,2009
+Ramon,Castro,C,33,White Sox,White Sox,1,1000000,2009
+Jason,LaRue,C,35,Cardinals,Cardinals,1,950000,2009
+Mike,Redmond,C,38,Twins,Guardians,1,850000,2009
+Henry,Blanco,C,38,Padres,Mets,1,775000,2009
+Rod,Barajas,C,34,Blue Jays,Mets,1,500000,2009
+Manny,Machado,3B,26,Dodgers,Padres,10,300000000,2018
+Anthony,Rendon,3B,29,Nationals,Angels,7,245000000,2019
+Adrian,Beltre,3B,30,Red Sox,Rangers,6,96000000,2010
+Pablo,Sandoval,3B,27,Giants,Red Sox,5,95000000,2014
+Josh,Donaldson,3B,34,Braves,Twins,4,92000000,2019
+Justin,Turner,3B,32,Dodgers,Dodgers,4,64000000,2016
+Jhonny,Peralta,3B,30,Tigers,Cardinals,4,53000000,2013
+Chase,Headley,3B,29,Yankees,Yankees,4,52000000,2014
+Zack,Cozart,3B,32,Reds,Angels,3,38000000,2017
+Aramis,Ramirez,3B,32,Cubs,Brewers,3,36000000,2011
+DJ,LeMahieu,3B,30,Rockies,Yankees,2,24000000,2018
+Josh,Donaldson,3B,33,Indians,Braves,1,23000000,2018
+Juan,Uribe,3B,30,Giants,Dodgers,3,21000000,2010
+Eduardo,Escobar,3B,30,Diamondbacks,Diamondbacks,3,21000000,2018
+Asdrubal,Cabrera,3B,30,Rays,Mets,2,18500000,2015
+Todd,Frazier,3B,32,Yankees,Mets,2,17000000,2017
+Juan,Uribe,3B,33,Dodgers,Dodgers,2,15000000,2013
+Luis,Valbuena,3B,31,Astros,Angels,2,15000000,2016
+Kevin,Youkilis,3B,32,White Sox,Yankees,1,12000000,2012
+Starlin,Castro,3B,29,Marlins,Nationals,2,12000000,2019
+Orlando,Hudson,3B,32,Twins,Padres,2,11500000,2010
+Jhonny,Peralta,3B,27,Tigers,Tigers,2,11250000,2010
+Sean,Rodriguez,3B,31,Pirates,Braves,2,11000000,2016
+Ty,Wigginton,3B,32,Orioles,Rockies,2,8000000,2010
+Asdrubal,Cabrera,3B,28,Nationals,Rays,1,7500000,2014
+Jamey,Carroll,3B,37,Dodgers,Twins,2,6750000,2011
+Jerry Hairston,Jr.,3B,34,Brewers,Dodgers,2,6000000,2011
+Trevor,Plouffe,3B,30,Twins,Athletics,1,5250000,2016
+Ty,Wigginton,3B,34,Phillies,Cardinals,2,5000000,2012
+Daniel,Descalso,3B,32,Diamondbacks,Cubs,2,5000000,2018
+Todd,Frazier,3B,34,Mets,Rangers,1,5000000,2019
+Eric,Sogard,3B,33,Rays,Brewers,1,4500000,2019
+Jack,Hannahan,3B,31,Indians,Reds,2,4000000,2012
+Kevin,Youkilis,3B,33,Yankees,Japan,1,4000000,2013
+Juan,Uribe,3B,36,Mets,Guardians,1,4000000,2015
+Travis,Shaw,3B,29,Brewers,Blue Jays,1,4000000,2019
+Daniel,Descalso,3B,27,Cardinals,Rockies,2,3600000,2014
+Eric,Chavez,3B,35,Diamondbacks,Diamondbacks,1,3500000,2013
+Asdrubal,Cabrera,3B,33,Phillies,Rangers,1,3500000,2018
+Bill,Hall,3B,30,Red Sox,Astros,1,3250000,2010
+Brock,Holt,3B,31,Red Sox,Brewers,1,3250000,2019
+John,McDonald,3B,36,Diamondbacks,Diamondbacks,2,3000000,2011
+Eric,Chavez,3B,34,Yankees,Diamondbacks,1,3000000,2012
+Andres,Blanco,3B,32,Phillies,Phillies,1,3000000,2016
+Jung Ho,Kang,3B,31,Pirates,Pirates,1,3000000,2018
+Maikel,Franco,3B,27,Phillies,Royals,1,3000000,2019
+Placido,Polanco,3B,36,Phillies,Marlins,1,2750000,2012
+Geoff,Blum,3B,36,Astros,Diamondbacks,2,2700000,2010
+Sean,Rodriguez,3B,30,Pirates,Pirates,1,2500000,2015
+Asdrubal,Cabrera,3B,34,Nationals,Nationals,1,2500000,2019
+Jerry Hairston,Jr.,3B,33,Padres,Nationals,1,2000000,2010
+Melvin,Mora,3B,38,Rockies,Diamondbacks,1,2000000,2010
+Casey,Blake,3B,37,Dodgers,Rockies,1,2000000,2011
+Ian,Stewart,3B,26,Cubs,Cubs,1,2000000,2012
+Daniel,Descalso,3B,30,Rockies,Diamondbacks,1,1500000,2016
+Casey,McGehee,3B,30,Japan,Marlins,1,1100000,2013
+Jorge,Cantu,3B,28,Rays,Padres,1,850000,2010
+Adam,Kennedy,3B,35,Mariners,Dodgers,1,800000,2011
+Marco,Hernandez,3B,27,Red Sox,Red Sox,1,650000,2019
+Chone,Figgins,3B,32,Angels,Mariners,4,36000000,2009
+Placido,Polanco,3B,34,Tigers,Phillies,3,18000000,2009
+Adrian,Beltre,3B,30,Mariners,Red Sox,1,10000000,2009
+Orlando,Hudson,3B,32,Dodgers,Twins,1,5000000,2009
+Pedro,Feliz,3B,34,Phillies,Astros,1,4500000,2009
+Jamey,Carroll,3B,36,Indians,Dodgers,2,3850000,2009
+Juan,Uribe,3B,30,Giants,Giants,1,3250000,2009
+John,McDonald,3B,35,Blue Jays,Blue Jays,2,3000000,2009
+Jerry Hairston,Jr.,3B,33,Yankees,Padres,1,2125000,2009
+Adam,Everett,3B,33,Tigers,Tigers,1,1550000,2009
+Melvin,Mora,3B,38,Orioles,Rockies,1,1300000,2009
+Adam,Kennedy,3B,34,Athletics,Nationals,1,1250000,2009
+Robinson,Cano,2B,30,Yankees,Mariners,10,240000000,2013
+Omar,Infante,2B,31,Tigers,Royals,4,30000000,2013
+Jed,Lowrie,2B,29,Athletics,Astros,3,23000000,2014
+Marco,Scutaro,2B,36,Giants,Giants,3,20000000,2012
+Howie,Kendrick,2B,32,Dodgers,Dodgers,2,20000000,2015
+Jed,Lowrie,2B,34,Athletics,Mets,2,20000000,2018
+Rafael,Furcal,2B,33,Cardinals,Cardinals,2,14000000,2011
+Jeff,Keppinger,2B,31,Rays,White Sox,3,12000000,2012
+Aaron,Hill,2B,28,Diamondbacks,Diamondbacks,2,11000000,2011
+Maicer,Izturis,2B,31,Angels,Blue Jays,3,10000000,2012
+Tsuyoshi,Nishioka,2B,25,Japan,Twins,3,9000000,2010
+Brian,Dozier,2B,31,Dodgers,Nationals,1,9000000,2018
+Mark,Ellis,2B,33,Rockies,Dodgers,2,8750000,2011
+Ian,Kinsler,2B,36,Red Sox,Padres,2,8000000,2018
+Jonathan,Schoop,2B,27,Brewers,Twins,1,7500000,2018
+Chase,Utley,2B,37,Dodgers,Dodgers,1,7000000,2015
+Howie,Kendrick,2B,34,Nationals,Nationals,2,7000000,2017
+Miguel,Tejada,2B,35,Padres,Giants,1,6500000,2010
+Cesar,Hernandez,2B,29,Phillies,Guardians,1,6250000,2019
+Howie,Kendrick,2B,36,Nationals,Nationals,1,6250000,2019
+Jonathan,Schoop,2B,28,Twins,Tigers,1,6100000,2019
+Mark,Ellis,2B,35,Dodgers,Cardinals,1,5250000,2013
+Emilio,Bonifacio,2B,28,Braves,White Sox,1,4000000,2014
+Eduardo,Nunez,2B,30,Red Sox,Red Sox,1,4000000,2017
+Rafael,Furcal,2B,35,Cardinals,Marlins,1,3500000,2013
+Nick,Punto,2B,33,Cardinals,Red Sox,3,3000000,2011
+Kelly,Johnson,2B,30,Rays,Yankees,1,3000000,2013
+Nick,Punto,2B,35,Dodgers,Athletics,1,3000000,2013
+Alberto,Callaspo,2B,30,Athletics,Braves,1,3000000,2014
+José,Peraza,2B,25,Reds,Red Sox,1,3000000,2019
+Brian,Roberts,2B,35,Orioles,Yankees,1,2000000,2013
+Kelly,Johnson,2B,33,Mets,Braves,1,2000000,2015
+Chase,Utley,2B,38,Dodgers,Dodgers,1,2000000,2016
+Chase,Utley,2B,39,Dodgers,Dodgers,2,2000000,2017
+Brad,Miller,2B,30,Phillies,Cardinals,1,2000000,2019
+Jeff,Keppinger,2B,30,Giants,Rays,1,1525000,2011
+Ryan,Theriot,2B,31,Cardinals,Giants,1,1250000,2011
+Darwin,Barney,2B,30,Blue Jays,Blue Jays,1,1050000,2015
+Kevin,Frandsen,2B,31,Nationals,Nationals,1,1000000,2014
+Adeiny,Hechavarria,2B,30,Braves,Braves,1,1000000,2019
+Jason,Kipnis,2B,32,Indians,Cubs,1,1000000,2019
+Hernan,Perez,2B,28,Brewers,Cubs,1,1000000,2019
+Mark,DeRosa,2B,35,Giants,Nationals,1,800000,2011
+Ronald,Torreyes,2B,26,Cubs,Twins,1,800000,2018
+Nick,Punto,2B,32,Twins,Cardinals,1,750000,2010
+Marco,Scutaro,2B,34,Blue Jays,Red Sox,2,12500000,2009
+Mark,DeRosa,2B,34,Cardinals,Giants,2,12000000,2009
+Miguel,Tejada,2B,35,Astros,Orioles,1,6000000,2009
+Kelly,Johnson,2B,27,Braves,Diamondbacks,1,2350000,2009
+Omar,Vizquel,2B,42,Rangers,White Sox,1,1375000,2009
+Felipe,Lopez,2B,29,Brewers,Cardinals,1,1000000,2009
+Ronnie,Belliard,2B,34,Dodgers,Dodgers,1,825000,2009
+Juan,Castro,2B,37,Dodgers,Phillies,1,700000,2009
+Albert,Pujols,1B,31,Cardinals,Angels,10,250000000,2011
+Prince,Fielder,1B,26,Brewers,Tigers,9,214000000,2011
+Chris,Davis,1B,29,Orioles,Orioles,7,161000000,2015
+Eric,Hosmer,1B,28,Royals,Padres,8,144000000,2017
+Victor,Martinez,1B,35,Tigers,Tigers,4,68000000,2014
+Mike,Moustakas,1B,31,Brewers,Reds,4,64000000,2019
+Edwin,Encarnacion,1B,34,Blue Jays,Guardians,3,60000000,2016
+Carlos,Santana,1B,31,Indians,Phillies,3,60000000,2017
+Victor,Martinez,1B,31,Red Sox,Tigers,4,50000000,2010
+José,Abreu,1B,33,White Sox,White Sox,3,50000000,2019
+Paul,Konerko,1B,33,White Sox,White Sox,3,37500000,2010
+Daniel,Murphy,1B,30,Mets,Nationals,3,37500000,2015
+Kendrys,Morales,1B,33,Royals,Blue Jays,3,33000000,2016
+Mike,Napoli,1B,31,Red Sox,Red Sox,2,32000000,2013
+Billy,Butler,1B,27,Royals,Athletics,3,30000000,2014
+Adam,LaRoche,1B,34,Nationals,White Sox,2,25000000,2014
+Adam,LaRoche,1B,32,Nationals,Nationals,2,24000000,2012
+Daniel,Murphy,1B,33,Cubs,Rockies,2,24000000,2018
+Aubrey,Huff,1B,33,Giants,Giants,2,22000000,2010
+James,Loney,1B,28,Rays,Rays,3,21000000,2013
+Neil,Walker,1B,31,Mets,Mets,1,17200000,2016
+Kendrys,Morales,1B,30,Mariners,Royals,2,17000000,2014
+Adam,LaRoche,1B,30,Diamondbacks,Nationals,2,16000000,2010
+Eric,Thames,1B,30,--,Brewers,3,16000000,2016
+Yonder,Alonso,1B,30,Mariners,Guardians,2,16000000,2017
+Mitch,Moreland,1B,32,Red Sox,Red Sox,2,13000000,2017
+Justin,Morneau,1B,31,Pirates,Rockies,2,12500000,2013
+Steve,Pearce,1B,33,Orioles,Blue Jays,2,12500000,2016
+ByungHo,Park,1B,29,--,Twins,4,12000000,2015
+Edwin,Encarnacion,1B,37,Yankees,White Sox,1,12000000,2019
+Lance,Berkman,1B,36,Cardinals,Rangers,1,11000000,2012
+Carlos,Pena,1B,31,Rays,Cubs,1,10000000,2010
+Mike,Moustakas,1B,30,Brewers,Brewers,1,10000000,2018
+Mike,Napoli,1B,35,Indians,Rangers,1,8500000,2016
+Lance,Berkman,1B,34,Yankees,Cardinals,1,8000000,2010
+Michael,Morse,1B,31,Giants,Marlins,2,8000000,2014
+John,Jaso,1B,32,Rays,Pirates,2,8000000,2015
+Derrek,Lee,1B,34,Braves,Orioles,1,7500000,2010
+Carlos,Pena,1B,32,Cubs,Rays,1,7250000,2011
+Mike,Napoli,1B,34,Rangers,Guardians,1,7000000,2015
+Logan,Morrison,1B,30,Rays,Twins,1,6500000,2017
+Mike,Moustakas,1B,29,Royals,Royals,1,6500000,2017
+Steve,Pearce,1B,35,Red Sox,Red Sox,1,6500000,2018
+Wilmer,Flores,1B,28,Diamondbacks,Giants,2,6250000,2019
+C.J.,Cron,1B,30,Twins,Tigers,1,6100000,2019
+Luke,Scott,1B,32,Orioles,Rays,1,6000000,2011
+Mark,Reynolds,1B,28,Orioles,Guardians,1,6000000,2012
+Corey,Hart,1B,30,Brewers,Mariners,1,6000000,2013
+Michael,Morse,1B,30,Orioles,Giants,1,6000000,2013
+Pedro,Alvarez,1B,29,Pirates,Orioles,1,5750000,2015
+Mitch,Moreland,1B,31,Rangers,Red Sox,1,5500000,2016
+Lyle,Overbay,1B,33,Blue Jays,Pirates,1,5000000,2010
+Mike,Napoli,1B,30,Rangers,Red Sox,1,5000000,2012
+Justin,Smoak,1B,33,Blue Jays,Brewers,1,5000000,2019
+Steve,Pearce,1B,32,Orioles,Rays,1,4750000,2015
+David,Freese,1B,35,Dodgers,Dodgers,1,4500000,2018
+Wilmer,Flores,1B,27,Mets,Diamondbacks,1,4250000,2018
+Matt,Adams,1B,29,Braves,Nationals,1,4000000,2017
+Neil,Walker,1B,32,Brewers,Yankees,1,4000000,2017
+Eric,Thames,1B,33,Brewers,Nationals,1,4000000,2019
+Lucas,Duda,1B,32,Rays,Royals,1,3500000,2017
+Brad,Hawpe,1B,30,Rays,Padres,1,3000000,2010
+Jim,Thome,1B,39,Twins,Twins,1,3000000,2010
+Greg,Dobbs,1B,32,Marlins,Marlins,2,3000000,2011
+Casey,Kotchman,1B,27,Rays,Guardians,1,3000000,2011
+David,Freese,1B,32,Angels,Pirates,1,3000000,2015
+Chris,Carter,1B,30,Brewers,Yankees,1,3000000,2016
+Matt,Adams,1B,30,Cardinals,Nationals,1,3000000,2018
+Mitch,Moreland,1B,34,Red Sox,Red Sox,1,3000000,2019
+Carlos,Pena,1B,33,Rays,Astros,1,2900000,2012
+Mark,Reynolds,1B,32,Cardinals,Rockies,1,2600000,2015
+Edwin,Encarnacion,1B,27,Athletics,Blue Jays,1,2500000,2010
+Paul,Konerko,1B,36,White Sox,White Sox,1,2500000,2013
+Corey,Hart,1B,31,Mariners,Pirates,1,2500000,2014
+Logan,Morrison,1B,29,Rays,Rays,1,2500000,2016
+Justin,Bour,1B,30,Phillies,Angels,1,2500000,2018
+Miguel,Cairo,1B,35,Reds,Reds,2,2000000,2010
+Yuniesky,Betancourt,1B,29,Brewers,Royals,1,2000000,2011
+James,Loney,1B,27,Red Sox,Rays,1,2000000,2012
+Mark,Reynolds,1B,30,Brewers,Cardinals,1,2000000,2014
+Neil,Walker,1B,33,Yankees,Marlins,1,2000000,2018
+Jim,Thome,1B,40,Indians,Phillies,1,1250000,2011
+Justin,Smoak,1B,27,Mariners,Blue Jays,1,1000000,2014
+Adam,LaRoche,1B,30,Braves,Diamondbacks,1,6000000,2009
+Nick,Johnson,1B,31,Marlins,Yankees,1,5750000,2009
+Garrett,Atkins,1B,30,Rockies,Orioles,1,4500000,2009
+Aubrey,Huff,1B,33,Tigers,Giants,1,3000000,2009
+Ross,Gload,1B,33,Marlins,Phillies,2,2600000,2009
+Russell,Branyan,1B,34,Mariners,Guardians,1,2000000,2009
+Jason,Giambi,1B,39,Rockies,Rockies,1,1750000,2009
+Troy,Glaus,1B,33,Cardinals,Braves,1,1750000,2009
+Jim,Thome,1B,39,Dodgers,Twins,1,1500000,2009
+Fernando,Tatis,1B,35,Mets,Mets,1,850000,2009
+Ryan,Garko,1B,29,Giants,Mariners,1,550000,2009
+Ryan,Langerhans,1B,30,Mariners,Mariners,1,525000,2009
+Dan,Johnson,1B,30,Japan,Rays,1,500000,2009
