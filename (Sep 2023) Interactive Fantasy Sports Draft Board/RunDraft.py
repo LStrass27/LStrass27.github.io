@@ -19,8 +19,45 @@ remaining players available in each category.
 '''
 
 # This function resets PR after a player is removed
-def resetPR(overall, qbs, rbs, wrs, tes, defs, ks):
-# Generate Average Values
+def resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks):
+    # Constants for roster alignment
+    # For flex add 40% to rbs and 60% to WRS
+    num_teams = 10
+    start_qb = 2
+    start_rb = 2.4
+    start_wr = 3.6
+    start_te = 1
+    start_def = 1
+    start_k = 1
+
+    for pick in user_picks:
+        if((pick == "qb") and (start_qb > .2)):
+            start_qb -= 0.8
+        elif((pick == "rb") and (start_rb > .2)):
+            start_rb -= 0.8
+        elif((pick == "wr") and (start_wr > .2)):
+            start_wr -= 0.8
+        elif((pick == "te") and (start_te > .2)):
+            start_te -= 0.8
+        elif((pick == "def") and (start_def > .2)):
+            start_def -= 0.8
+        elif((pick == "k") and (start_k > .2)):
+            start_k -= 0.8
+
+        if(start_qb < .2):
+            start_qb = .2
+        if(start_rb < .2):
+            start_rb = .2
+        if(start_wr < .2):
+            start_wr = .2
+        if(start_te < .2):
+            start_te = .2
+        if(start_def < .2):
+            start_def = .2
+        if(start_k < .2):
+            start_k = .2
+            
+    # Generate Average Values
     val = 0
     for i in range(5):
         val += overall[i][2]
@@ -32,71 +69,71 @@ def resetPR(overall, qbs, rbs, wrs, tes, defs, ks):
     overall10 = val/10
 
     val = 0
-    for i in range(5):
+    for i in range(int(round(5 * start_qb))):
         val += qbs[i][1]
-    qb5 = val / 10
+    qb5 = val / int(round((5 * start_qb)))
 
     val = 0
-    for i in range(10):
+    for i in range(int(round(10 * start_qb))):
         val += qbs[i][1]
-    qb10 = val/20
-    qbStart = qbs[12][1]
+    qb10 = val/ int(round((10 * start_qb)))
+    qbStart = qbs[int(round(num_teams * start_qb))][1]
 
     
     val = 0
-    for i in range(10):
+    for i in range(int(round(5 * start_rb))):
         val += rbs[i][1]
-    rb5 = val / 10
+    rb5 = val / int(round((5 * start_rb)))
 
     val = 0
-    for i in range(20):
+    for i in range(int(round(10 * start_rb))):
         val += rbs[i][1]
-    rb10 = val/20
-    rbStart = rbs[24][1]
+    rb10 = val/int(round((10 * start_rb)))
+    rbStart = rbs[int(round(num_teams * start_rb))][1]
 
     val = 0
-    for i in range(10):
+    for i in range(int(round(5 * start_wr))):
         val += wrs[i][1]
-    wr5 = val / 15
+    wr5 = val / int(round((5 * start_wr)))
 
     val = 0
-    for i in range(20):
+    for i in range(int(round(10 * start_wr))):
         val += wrs[i][1]
-    wr10 = val/30
-    wrStart = wrs[24][1]
+    wr10 = val/int(round((10 * start_wr)))
+    wrStart = wrs[int(round(num_teams * start_wr))][1]
 
     val = 0
-    for i in range(5):
+    for i in range(int(round(5 * start_te))):
         val += tes[i][1]
-    te5 = val / 5
+    te5 = val / (int(round(5 * start_te)))
 
     val = 0
-    for i in range(10):
+    for i in range(int(round(10 * start_te))):
         val += tes[i][1]
-    te10 = val/ 10
-    teStart = tes[12][1]
+    te10 = val/ int(round((10 * start_te)))
+    teStart = tes[int(round(num_teams * start_te))][1]
 
     val = 0
-    for i in range(5):
+    for i in range(int(round(5 * start_def))):
         val += defs[i][1]
-    def5 = val / 5
+    def5 = val / int(round((5 * start_def)))
 
     val = 0
-    for i in range(10):
+    for i in range(int(round(10 * start_def))):
         val += defs[i][1]
-    def10 = val/10
-    defStart = defs[12][1]
+    def10 = val/ int((10 * start_def))
+    defStart = defs[int(round(num_teams * start_def))][1]
 
     val = 0
-    for i in range(5):
+    for i in range(int(round(5 * start_k))):
         val += ks[i][1]
-    k5 = val / 5
+    k5 = val / int(round((5 * start_k)))
 
     val = 0
-    for i in range(10):
+    for i in range(int(round(10 * start_k))):
         val += ks[i][1]
-    k10 = val/ 10
-    kStart = ks[12][1]
+    k10 = val/ int(round((10 * start_k)))
+    kStart = ks[int(round(num_teams * start_k))][1]
 
 # Update Ratings
     for i in range(len(qbs)):
@@ -134,7 +171,9 @@ def resetPR(overall, qbs, rbs, wrs, tes, defs, ks):
 
 # Start Function for the Interactive Interface
 def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
+    user_picks = []
     userPos = 'Luke' # Temp initialization value
+    total_picks = 0
     printNew(overall, qbs, rbs, wrs, tes, defs, ks)
     found = False
     first = True
@@ -147,6 +186,14 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
         print('\n')
         userPos = input("Enter Position: ")
         userPlayer = input("Enter Player: ")
+        userPick = input("Is this a User Pick (T or F): ")
+        match userPick.lower():
+            case "t":
+                userPick = True
+            case "f":
+                userPick = False
+
+        print(userPick)
         found = False
         count = 0
 
@@ -162,6 +209,10 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
                     found = True
                     print(userPlayer, "has been removed")
                     print("\n")
+                    total_picks += 1
+
+                    if(userPick):
+                        user_picks.append("qb")
 
                     for i in range(len(overall) - 1):
                         if(overall[i][0] == userPlayer):
@@ -181,6 +232,10 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
                     found = True
                     print(userPlayer, "has been removed")
                     print("\n")
+                    total_picks += 1
+
+                    if(userPick):
+                        user_picks.append("rb")
 
                     for i in range(len(overall) - 1):
                         if(overall[i][0] == userPlayer):
@@ -200,6 +255,10 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
                     found = True
                     print(userPlayer, "has been removed")
                     print("\n")
+                    total_picks += 1
+
+                    if(userPick):
+                        user_picks.append("wr")
 
                     for i in range(len(overall) - 1):
                         if(overall[i][0] == userPlayer):
@@ -219,6 +278,10 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
                     found = True
                     print(userPlayer, "has been removed")
                     print("\n")
+                    total_picks += 1
+
+                    if(userPick):
+                        user_picks.append("te")
 
                     for i in range(len(overall) - 1):
                         if(overall[i][0] == userPlayer):
@@ -238,6 +301,10 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
                     found = True
                     print(userPlayer, "has been removed")
                     print("\n")
+                    total_picks += 1
+
+                    if(userPick):
+                        user_picks.append("def")
 
                     for i in range(len(overall) - 1):
                         if(overall[i][0] == userPlayer):
@@ -257,6 +324,10 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
                     found = True
                     print(userPlayer, "has been removed")
                     print("\n")
+                    total_picks += 1
+
+                    if(userPick):
+                        user_picks.append("k")
 
                     for i in range(len(overall) - 1):
                         if(overall[i][0] == userPlayer):
@@ -269,6 +340,8 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
         elif(userPos.lower() == 'undo'):
             overall.insert(lastOverallInd, [last_player, last_position, last_points, 0])
             found = True
+            total_picks -= 1
+            user_picks.pop()
             if(last_position.lower() == 'qb'):
                 qbs.insert(last_posInd, [last_player, last_points, 0])
             elif(last_position.lower() == 'rb'):
@@ -282,17 +355,41 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
             elif(last_position.lower() == 'k'):
                 ks.insert(last_posInd, [last_player, last_points, 0])
 
+        elif(userPos.lower() == 'search'):
+            for i in range(len(qbs)):
+                if(userPlayer.lower() in qbs[i][0].lower()):
+                    print("qb " + qbs[i][0] + " " + str(qbs[i][1]) + "\n")
+            for i in range(len(rbs)):
+                if(userPlayer.lower() in rbs[i][0].lower()):
+                    print("rb " + rbs[i][0] + " " + str(rbs[i][1]) + "\n")
+            for i in range(len(wrs)):
+                if(userPlayer.lower() in wrs[i][0].lower()):
+                    print("wr " + wrs[i][0] + " " + str(wrs[i][1]) + "\n")
+            for i in range(len(tes)):
+                if(userPlayer.lower() in tes[i][0].lower()):
+                    print("te " + tes[i][0] + " " + str(tes[i][1]) + "\n")
+            for i in range(len(defs)):
+                if(userPlayer.lower() in defs[i][0].lower()):
+                    print("def " + defs[i][0] + " " + str(defs[i][1]) + "\n")
+            for i in range(len(ks)):
+                if(userPlayer.lower() in ks[i][0].lower()):
+                    print("k " + ks[i][0] + " " + str(ks[i][1]) + "\n")
+            
+
+        elif(userPos.lower() == 'count'):
+            print("Pick total: ", total_picks)
+
         else:
             print("Position Not Found")
 
         first = False
 
-        overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks)
+        overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks)
 
 # Print function to see leading players available by PR
 def printNew(overall, qbs, rbs, wrs, tes, defs, ks):
     print ("{:<36} {:<36} {:<36} {:<36}".format('QBS','RBS','WRS','TES'))
-    for i in range(20):
+    for i in range(20): # USUALLY 20
         PR = qbs[i][2]
         PR = "{:.3f}".format(PR)
         qb = str(PR) + " " +  qbs[i][0] + " " + str(qbs[i][1])
@@ -368,8 +465,9 @@ for j in range(len(defs)):
     defense = defense.strip()
     defs[j][0] = defense
 
+BLANK_LIST = []
 # Intialize PR for all players
-overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks)
+overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks, BLANK_LIST)
 
 # Call the main interaction function
 runDraft(overall, qbs, rbs, wrs, tes, defs, ks)

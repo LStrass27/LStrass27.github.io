@@ -12,7 +12,6 @@ rps = []
 cs = []
 
 df = pd.read_csv('FantasyBaseball.csv', encoding='utf-8-sig')
-print(df)
 
 '''
 Player Rater (PR) is the metric used to determine how good of a value a 
