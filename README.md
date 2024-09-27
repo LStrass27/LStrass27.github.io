@@ -3,7 +3,7 @@ Hi there my name is Luke Strassburg. I am a Rising Senior Honors student at the 
 
 ## Tech Stack
 **Languages:** C, Java, Julia, Python, R, SQL  
-**Libraries:** BaseballR, Glmnet, LangChain, LangGraph, Matplotlib, Numpy, Pandas, SciKit-Learn, Tensorflow
+**Libraries:** BaseballR, Glmnet, LangChain, LangGraph, Matplotlib, Numpy, Pandas, SciKit-Learn, Tensorflow \
 **Tools:** Databricks, Excel, Github, Jupyter, PostgreSQL, RStudio, Snowflake, VS Code
 
 ## Projects
