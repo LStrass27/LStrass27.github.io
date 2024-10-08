@@ -22,10 +22,10 @@ remaining players available in each category.
 def resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks):
     # Constants for roster alignment
     # For flex add 40% to rbs and 60% to WRS
-    num_teams = 10
-    start_qb = 2
+    num_teams = 12
+    start_qb = 1
     start_rb = 2.4
-    start_wr = 3.6
+    start_wr = 2.6
     start_te = 1
     start_def = 1
     start_k = 1
