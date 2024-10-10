@@ -8,7 +8,7 @@ Hi there my name is Luke Strassburg. I am a Rising Senior Honors student at the 
 
 ## Projects
 More detail is in each of the corresponding folders for all the projects. I include the dates within the project names to show the progress I've made over time.\
-**Baserunning Scouting Dashboard: ** SMT Data Challenge Submission 2024. Made an Rshiny dashboard to visualize specific baserunning events. Provided insights that can be leveraged into strategic game decisions.
+**Baserunning Scouting Dashboard:** SMT Data Challenge Submission 2024. Made an Rshiny dashboard to visualize specific baserunning events. Provided insights that can be leveraged into strategic game decisions.
 **Predicting MLB Team Performance From Free Agent Patterns:** Used R to analyze free agent trends within the 2010s for the MLB and how it affected team results. Presented on at 2024 Ohio State Sports Analytics Conference.   
 **Offensive Lineman Performance Degradation:** Used Python to analyze offensive lineman performance throughout a football game and whether there was a pattern to this performance based upon age. Submitted to 2022 Big Data Bowl.    
 **FantasyPros Perfect Draft Challenge:** Attempted to create the perfect BestBall lineup for FantasyPros' Perfect Draft Challenge in 2023.    
