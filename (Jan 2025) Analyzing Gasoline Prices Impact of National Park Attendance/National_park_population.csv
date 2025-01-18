@@ -1,0 +1,61 @@
+ParkName,Region,State,Yearly_Recreation_Visits_Millions,Correlation,Nearest_City,Surrounding_Population,Latitude,Longitude
+Acadia NP,Northeast,ME,2.980293,-0.285002,Bar Harbor,557544,44.338974,-68.27343
+Arches NP,Intermountain,UT,0.881669,-0.002068,Moab,171900,38.733082,-109.592514
+Badlands NP,Midwest,SD,1.02129,-0.144446,Rapid City,216683,43.75,-102.5
+Big Bend NP,Intermountain,TX,0.321691,-0.243771,Alpine,31787,29.25,-103.25
+Biscayne NP,Southeast,FL,0.46257,0.047171,Homestead,6183199,25.65,-80.08
+Black Canyon of the Gunnison NP,Intermountain,CO,0.243845,-0.258707,Montrose,333679,38.57,-107.72
+Bryce Canyon NP,Intermountain,UT,1.205665,-0.127601,Tropic,111691,37.593048,-112.187332
+Canyonlands NP,Intermountain,UT,0.410925,-0.075161,Moab,171900,38.2,-109.93
+Capitol Reef NP,Intermountain,UT,0.665865,-0.116522,Torrey,79476,38.0896,-111.14991
+Carlsbad Caverns NP,Intermountain,NM,0.540463,-0.406518,Carlsbad,195980,32.17,-104.44
+Channel Islands NP,Pacific West,CA,0.313364,-0.147538,Santa Barbara,1552486,33.998028,-119.772949
+Congaree NP,Southeast,SC,0.099584,-0.071025,Eastover,2685860,33.78,-80.78
+Crater Lake NP,Pacific West,OR,0.486252,-0.416559,Klamath Falls,341969,42.944611,-122.109245
+Cuyahoga Valley NP,Midwest,OH,2.195553,-0.299615,Cleveland,4552228,41.24,-81.55
+Death Valley NP,Pacific West,CA,0.937635,0.095174,Lone Pine,32329,36.24,-116.82
+Denali NP & PRES,Alaska,AK,0.430435,0.145011,Healy,1584,63.129887,-151.197418
+Dry Tortugas NP,Southeast,FL,0.047177,0.14463,Key West,80614,24.63,-82.87
+Everglades NP,Southeast,FL,0.926644,0.07084,Everglades City,1537115,25.286615,-80.898651
+Gateway Arch NP,Midwest,MO,2.416309,0.169501,St. Louis,3157608,38.63,-90.19
+Glacier Bay NP & PRES,Alaska,AK,0.325136,-0.192579,Juneau,33625,58.665806,-136.900208
+Glacier NP,Intermountain,MT,2.070991,-0.094918,Columbia Falls,196205,48.8,-114
+Grand Canyon NP,Intermountain,AZ,4.145092,0.352113,Tusayan,393553,36.266033,-112.363808
+Grand Teton NP,Intermountain,WY,2.484664,-0.347653,Jackson,277307,43.790802,-110.684944
+Great Basin NP,Pacific West,NV,0.085377,-0.142781,Baker,8522,38.98,-114.3
+Great Sand Dunes NP & PRES,Intermountain,CO,0.295904,-0.118741,Alamosa,158125,37.73,-105.51
+Great Smoky Mountains NP,Southeast,TN,9.77001,-0.32999,Townsend,2115075,35.611763,-83.489548
+Guadalupe Mountains NP,Intermountain,TX,0.181301,-0.210145,Dell City,875527,31.92,-104.87
+Haleakala NP,Pacific West,HI,1.189186,-0.246027,Pukalani,164183,20.701283,-156.173325
+Hawaii Volcanoes NP,Pacific West,HI,1.411208,0.072086,Hilo,207615,19.38,-155.2
+Hot Springs NP,Midwest,AR,1.409689,-0.173666,Hot Springs,1263373,34.52153,-93.042267
+Indiana Dunes NP,Midwest,IN,1.853265,-0.288156,Porter,10051181,41.6533,-87.0524
+Isle Royale NP,Midwest,MI,0.020125,0.025051,Thunder Bay,120986,48.1,-88.55
+Joshua Tree NP,Pacific West,CA,1.449401,-0.407164,Twentynine Palms,17487153,33.881866,-115.90065
+Katmai NP & PRES,Alaska,AK,0.040249,-0.105374,King Salmon,6782,58.597813,-154.693756
+Kenai Fjords NP,Alaska,AK,0.222713,0.266257,Seward,61223,60.043777,-149.81636
+Kings Canyon NP,Pacific West,CA,0.684758,-0.186449,Fresno,2121009,36.887856,-118.555145
+Lake Clark NP & PRES,Alaska,AK,0.011343,-0.038732,Anchorage,401314,60.412697,-154.323502
+Lassen Volcanic NP,Pacific West,CA,0.420357,0.238474,Susanville,59692,40.49,-121.51
+Mammoth Cave NP,Southeast,KY,1.293298,-0.084193,Brownsville,1713037,37.18364,-86.159943
+Mesa Verde NP,Intermountain,CO,0.567048,-0.126693,Cortez,234330,37.230873,-108.461838
+Mount Rainier NP,Pacific West,WA,1.300332,0.030576,Tacoma,4973312,46.879967,-121.726906
+New River Gorge NP & PRES,Northeast,WV,1.036167,-0.014638,Fayetteville,947919,38.0692,-81.0747
+North Cascades NP,Pacific West,WA,0.199915,-0.237038,Sedro-Woolley,3973298,48.7,-121.2
+Olympic NP,Pacific West,WA,2.987589,-0.319134,Port Angeles,4041687,47.97,-123.5
+Petrified Forest NP,Intermountain,AZ,0.697282,-0.379628,Holbrook,174211,34.909988,-109.806793
+Pinnacles NP,Pacific West,CA,0.197357,0.154316,Soledad,2929957,36.491508,-121.197243
+Redwood NP,Pacific West,CA,0.444256,0.035262,Crescent City,271691,41.213181,-124.004631
+Rocky Mountain NP,Intermountain,CO,3.114974,0.065916,Grand Lake,4184528,40.343182,-105.688103
+Saguaro NP,Intermountain,AZ,0.725132,-0.119662,Tucson,1721199,32.25,-110.5
+Sequoia NP,Pacific West,CA,1.002438,0.081078,Visalia,2725990,36.43,-118.68
+Shenandoah NP,Northeast,VA,1.519811,-0.324553,Elkton,86568,38.700516,-78.292694
+Theodore Roosevelt NP,Midwest,ND,0.532145,-0.118456,Medora,83892,46.97,-103.45
+Virgin Islands NP,Southeast,VI,0.554547,0.06121,Charlotte Amalie,104917,18.33,-64.73
+Voyageurs NP,Midwest,MN,0.222293,-0.168352,International Falls,15529,48.5,-92.88
+White Sands NP,Intermountain,NM,0.546451,0.015877,Alamogordo,314074,32.77972,-106.171669
+Wind Cave NP,Midwest,SD,0.614212,-0.139664,Hot Springs,214797,43.57,-103.48
+Wrangell-St. Elias NP & PRES,Alaska,AK,0.048571,0.158406,Copper Center,5000,61.710445,-142.985687
+Yellowstone NP,Intermountain,WY,3.09766,-0.456186,West Yellowstone,217107,44.423691,-110.588516
+Yosemite NP,Pacific West,CA,3.4602,0.008474,Mariposa,2195935,37.865101,-119.53833
+Zion NP,Intermountain,UT,2.647042,-0.118453,Cedar City,289185,37.297817,-113.02877
