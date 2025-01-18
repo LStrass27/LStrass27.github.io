@@ -1,6 +1,6 @@
 ## Analyzing Gasoline Price Impact on National Park Attendance
 
-**Correlation_Visits.html:** Main output of the analysis. Mapped visualization of all the US national parks showing total attendance and impact of gasoline on each park's attendance.
+**Correlation_Visits.html:** Main output of the analysis. Mapped visualization of all the US national parks showing total attendance and impact of gasoline on each park's attendance. Screenshot shown below.
 
 **gas_aggregation.ipynb:** SQL testing of Gas price dataset and determining proper aggregation to be used for analysis.
 
@@ -10,9 +10,13 @@
 
 **national_park_project.HTML:** HTML output of national_parks.ipynb
 
+**national_park_visualization.png:** Screenshot of Correlation_Visits.html. Embedded below.
+
 **national_parks.ipynb:** Jupyter notebook containing all the code and analysis of the project.
 
 **US-National-Parks_RecreationVisits_1979-2023.csv:** Dataset of National Park attendance tracked annually from 1979-2023.
+
+![plot](National_park_visualization.png)
 
 # Sources
 
