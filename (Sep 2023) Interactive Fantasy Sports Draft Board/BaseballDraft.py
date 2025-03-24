@@ -90,26 +90,26 @@ def resetPR(overall, obs, sbs, sss, tbs, ofs, sps, rps, cs):
     ofstart = ofs[36][1]
 
     val = 0
-    for i in range(20):
+    for i in range(25):
         val += sps[i][1]
-    sp5 = val / 20
+    sp5 = val / 25
 
     val = 0
-    for i in range(40):
+    for i in range(50):
         val += sps[i][1]
-    sp10 = val/ 40
-    spstart = sps[12][1]
+    sp10 = val/ 50
+    spstart = sps[60][1]
 
     val = 0
-    for i in range(5):
+    for i in range(15):
         val += rps[i][1]
-    rp5 = val / 5
+    rp5 = val / 15
 
     val = 0
-    for i in range(10):
+    for i in range(30):
         val += rps[i][1]
-    rp10 = val/ 10
-    rpstart = rps[12][1]
+    rp10 = val/ 30
+    rpstart = rps[36][1]
 
     val = 0
     for i in range(5):
@@ -120,7 +120,7 @@ def resetPR(overall, obs, sbs, sss, tbs, ofs, sps, rps, cs):
     for i in range(10):
         val += cs[i][1]
     c10 = val/ 10
-    cstart = sps[12][1]
+    cstart = cs[12][1]
 
 # Update Ratings
     for i in range(len(obs)):
