@@ -19,16 +19,16 @@ remaining players available in each category.
 '''
 
 # This function resets PR after a player is removed
-def resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks):
+def resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks, roster_params):
     # Constants for roster alignment
     # For flex add 40% to rbs and 60% to WRS
-    num_teams = 12
-    start_qb = 1
-    start_rb = 2.4
-    start_wr = 2.6
-    start_te = 1
-    start_def = 1
-    start_k = 1
+    num_teams = roster_params['num_teams']
+    start_qb = roster_params['start_qb']
+    start_rb = roster_params['start_rb'] + roster_params['start_flex'] * 0.4
+    start_wr = roster_params['start_wr'] + roster_params['start_flex'] * 0.6
+    start_te = roster_params['start_te']
+    start_def = roster_params['start_def']
+    start_k = roster_params['start_k']
 
     for pick in user_picks:
         if((pick == "qb") and (start_qb > .2)):
@@ -170,7 +170,7 @@ def resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks):
     return overall, qbs, rbs, wrs, tes, defs, ks
 
 # Start Function for the Interactive Interface
-def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
+def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
     user_picks = []
     userPos = 'Luke' # Temp initialization value
     total_picks = 0
@@ -384,7 +384,7 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks):
 
         first = False
 
-        overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks)
+        overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks, roster_params)
 
 # Print function to see leading players available by PR
 def printNew(overall, qbs, rbs, wrs, tes, defs, ks):
@@ -466,8 +466,20 @@ for j in range(len(defs)):
     defs[j][0] = defense
 
 BLANK_LIST = []
+
+roster_params = {}
+roster_params['num_teams'] = int(input("Enter Number of Teams: "))
+roster_params['start_qb'] = int(input("Enter Number of Starting QBS: "))
+roster_params['start_rb'] = int(input("Enter Number of Starting RBS: "))
+roster_params['start_wr'] = int(input("Enter Number of Starting WRS: "))
+roster_params['start_te'] = int(input("Enter Number of Starting TES: "))
+roster_params['start_k'] = int(input("Enter Number of Starting KS: "))
+roster_params['start_def'] = int(input("Enter Number of Starting DEFS: "))
+roster_params['start_flex'] = int(input("Enter Number of Starting Flex: "))
+
+
 # Intialize PR for all players
-overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks, BLANK_LIST)
+overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks, BLANK_LIST, roster_params)
 
 # Call the main interaction function
-runDraft(overall, qbs, rbs, wrs, tes, defs, ks)
+runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params)
