@@ -1,4 +1,6 @@
 import pandas as pd
+import os
+import csv
 
 # Set up positional arrays
 overall = []
@@ -170,13 +172,69 @@ def resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks, roster_params):
     return overall, qbs, rbs, wrs, tes, defs, ks
 
 # Start Function for the Interactive Interface
-def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
+DRAFT_PICK_FILE = 'draft_picks.csv'
+
+def load_previous_draft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
     user_picks = []
+    if not os.path.exists(DRAFT_PICK_FILE):
+        return overall, qbs, rbs, wrs, tes, defs, ks, user_picks
+    with open(DRAFT_PICK_FILE, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            pos = row['Position']
+            player = row['Player']
+            user_pick = row['UserPick'].lower() == 'true'
+            # Simulate the pick as if user entered it
+            # Remove player from arrays and add to user_picks if needed
+            found = False
+            count = 0
+            if pos == 'qb':
+                arr = qbs
+            elif pos == 'rb':
+                arr = rbs
+            elif pos == 'wr':
+                arr = wrs
+            elif pos == 'te':
+                arr = tes
+            elif pos == 'def':
+                arr = defs
+            elif pos == 'k':
+                arr = ks
+            else:
+                continue
+            while not found and count < 100:
+                if arr[count][0] == player:
+                    arr.pop(count)
+                    found = True
+                    if user_pick:
+                        user_picks.append(pos)
+                    for i in range(len(overall) - 1):
+                        if overall[i][0] == player:
+                            overall.pop(i)
+                            break
+                else:
+                    count += 1
+    # After all picks, recalc PR
+    overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks, roster_params)
+    return overall, qbs, rbs, wrs, tes, defs, ks, user_picks
+
+def clear_draft_file():
+    with open(DRAFT_PICK_FILE, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['Position', 'Player', 'UserPick'])
+
+def append_pick_to_file(pos, player, user_pick):
+    with open(DRAFT_PICK_FILE, 'a', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow([pos, player, user_pick])
+
+def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params, user_picks):
     userPos = 'Luke' # Temp initialization value
-    total_picks = 0
+    total_picks = len(user_picks)
     printNew(overall, qbs, rbs, wrs, tes, defs, ks)
     found = False
     first = True
+    last_player = last_position = last_points = last_posInd = lastOverallInd = None
     while(userPos != "End"):
         if(found):
             printNew(overall, qbs, rbs, wrs, tes, defs, ks)
@@ -185,6 +243,8 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
             
         print('\n')
         userPos = input("Enter Position: ")
+        if userPos.lower() == "end":
+            break
         userPlayer = input("Enter Player: ")
         userPick = input("Is this a User Pick (T or F): ")
         match userPick.lower():
@@ -218,6 +278,8 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
                         if(overall[i][0] == userPlayer):
                             lastOverallInd = i
                             overall.pop(i)
+                    # Append pick to file
+                    append_pick_to_file('qb', userPlayer, userPick)
                 else:
                     count += 1
 
@@ -241,6 +303,7 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
                         if(overall[i][0] == userPlayer):
                             lastOverallInd = i
                             overall.pop(i)
+                    append_pick_to_file('rb', userPlayer, userPick)
                 else:
                     count += 1
 
@@ -264,6 +327,7 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
                         if(overall[i][0] == userPlayer):
                             lastOverallInd = i
                             overall.pop(i)
+                    append_pick_to_file('wr', userPlayer, userPick)
                 else:
                     count += 1
 
@@ -287,6 +351,7 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
                         if(overall[i][0] == userPlayer):
                             lastOverallInd = i
                             overall.pop(i)
+                    append_pick_to_file('te', userPlayer, userPick)
                 else:
                     count += 1
 
@@ -310,6 +375,7 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
                         if(overall[i][0] == userPlayer):
                             lastOverallInd = i
                             overall.pop(i)
+                    append_pick_to_file('def', userPlayer, userPick)
                 else:
                     count += 1
 
@@ -333,6 +399,7 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
                         if(overall[i][0] == userPlayer):
                             lastOverallInd = i
                             overall.pop(i)
+                    append_pick_to_file('k', userPlayer, userPick)
                 else:
                     count += 1
 
@@ -341,7 +408,8 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
             overall.insert(lastOverallInd, [last_player, last_position, last_points, 0])
             found = True
             total_picks -= 1
-            user_picks.pop()
+            if user_picks:
+                user_picks.pop()
             if(last_position.lower() == 'qb'):
                 qbs.insert(last_posInd, [last_player, last_points, 0])
             elif(last_position.lower() == 'rb'):
@@ -354,6 +422,14 @@ def runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params):
                 defs.insert(last_posInd, [last_player, last_points, 0])
             elif(last_position.lower() == 'k'):
                 ks.insert(last_posInd, [last_player, last_points, 0])
+            # Remove last line from file
+            try:
+                with open(DRAFT_PICK_FILE, 'r', encoding='utf-8') as f:
+                    lines = f.readlines()
+                with open(DRAFT_PICK_FILE, 'w', encoding='utf-8') as f:
+                    f.writelines(lines[:-1])
+            except Exception:
+                pass
 
         elif(userPos.lower() == 'search'):
             for i in range(len(qbs)):
@@ -481,5 +557,19 @@ roster_params['start_flex'] = int(input("Enter Number of Starting Flex: "))
 # Intialize PR for all players
 overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks, BLANK_LIST, roster_params)
 
+# Prompt for loading previous draft
+load_prev = input("Would you like to load a previous draft? (Y/N): ").strip().lower()
+if load_prev == 'y':
+    # Load previous picks and update arrays
+    overall, qbs, rbs, wrs, tes, defs, ks, user_picks = load_previous_draft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params)
+else:
+    # Clear previous draft file
+    clear_draft_file()
+    user_picks = []
+
+# Intialize PR for all players (already done in load_previous_draft if loading)
+if load_prev != 'y':
+    overall, qbs, rbs, wrs, tes, defs, ks = resetPR(overall, qbs, rbs, wrs, tes, defs, ks, user_picks, roster_params)
+
 # Call the main interaction function
-runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params)
+runDraft(overall, qbs, rbs, wrs, tes, defs, ks, roster_params, user_picks)
